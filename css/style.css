@@ -1,0 +1,250 @@
+body {
+    /*font-family: "Andika New Basic", sans-serif; */
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: f6f6f6;
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+    background-color: transparent;
+}
+
+.logo {
+    width: 23%;
+    padding: 1%;
+    vertical-align: bottom;
+    text-align: center;
+}
+
+.tab-highlight {
+    background-color: #6a1b2e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-highlight a {
+    color: #f6f6f6;
+}
+
+.button {
+    display: inline-block;
+    background-color: #6a1b2e; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding around the text */
+    text-align: center; /* Center-aligned text */
+    text-decoration: none; /* Remove underline from links */
+    font-size: 16px; /* Set font-size */
+    cursor: pointer; /* Change mouse cursor to pointer */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Optional: rounded corners */
+}
+
+.button:hover {
+    background-color: #6e7144; /* Darker shade of green on hover */
+}
+
+
+
+.button-highlight {
+    color: #f6f6f6;
+    background-color: #6a1b2e;
+    padding: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+hr {
+    height: 12px;
+    background-color: #6a1b2e; 
+    border: none;
+    margin: 10px; 
+}
+
+nav ul li {
+    margin-right: 10px;
+    margin-left: 10px;
+
+}
+
+footer li {
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-size: small;
+}
+
+nav {
+    width: 72%;
+    padding: 1%;
+    background-color: #f6f6f6;
+}
+
+
+ul {
+    width: 50%;
+    margin-left: auto;
+    margin-top: auto;
+}
+
+.li {
+    padding: 10px 15px;
+    margin-right: 10px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+.heroImg {
+    position: relative;
+    height:auto;
+    max-width: 100%;
+    background-color: #315376;
+   /* background-color: #f6f6f6; */
+    padding: 10px 5px 0px 5px;
+    
+}
+
+.hero-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-left; */
+  }
+  
+  .hero-image img {
+    width: 100%; /* Adjust based on your needs */
+    height: auto;
+  }
+
+
+.bottom-aligned-hero-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+}
+
+.bottom-aligned-hero-image img {
+    width: 100%; /* Make the image fill the container */
+    height: auto; /* Keep the aspect ratio */
+}
+
+
+  .text-content, .hero-image {
+    flex: 1;
+  }
+  
+
+.content {
+    width: 500px;
+    margin: 0 auto;
+    background-color: #6e7144;
+    padding-left: 10px;
+}
+
+
+.grid-Container {
+    display: grid;
+    background-color: #6E7144;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 10px;
+    grid-gap: 3px;
+
+}
+
+.grid-Container p {
+    /* display: grid; */
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.img {
+    padding-top: 3px;
+}
+
+.mySkills h1 {
+    padding-left: 10px;
+}
+
+.heroGrid {
+    display: grid;
+    background-color: #315376;
+    grid-template-columns: 1fr 1fr; 
+   /* grid-template-rows: 1fr 1fr 1fr; */
+    text-align: left;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+.workGrid {
+    display: grid;
+    background-color: #6e7144;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 10px;
+    gap: 20px;
+}
+
+
+.myWork h1 {
+    padding-left: 10px;
+}
+
+.myWork h3 {
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.tabs-container {
+    display: flex;
+}
+
+.tab {
+    padding: 10px;
+    margin: 0px;
+    cursor: pointer;
+    background-color: #ddd;
+}
+
+/* tab-content {
+  display: none;
+} */
+
+
+div p {
+    margin: 20px;
+}
+
+
+.footer {
+    background-color: #f6f6f6;
+    padding: 10px 15px;
+    margin-right: 20px;
+}
+
+.footer-link-highlight {
+    color: #f6f6f6;
+    padding: 3px;
+    background-color: #6a1b2e;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+        /* Add space between stacked items */
+    }
+}
